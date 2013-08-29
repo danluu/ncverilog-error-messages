@@ -1,0 +1,1 @@
+*E,BADDCL identify declaration while expecting a statement: declaration occurs where it shouldn't, e.g., you have a declaration in a task that isn't at the top
