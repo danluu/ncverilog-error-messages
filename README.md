@@ -8,4 +8,6 @@ ncsim: *E,MSSYSTF: User Defined system task or function registered during elabor
 
 *E,SVNIMP: SystemVerilog construct not yet implemented:  nested program -- I'm unsure what that mean by nested, since this error occurs even when you try to write a program block inside a module. This error message seems to be the one given any time write a program block where you shouldn't.
 
+ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)] -- there are many reasons this can happen. If you get a ridiculously large number of these, it could be because you left off an 'end'. The first one has the location of the error.
+
 X values in a multi-dimensional packed array: are you sure the array is large enough? If you index off the end, it is neither a compile time error nor a runtime error. It "works", but gives you Xs.
