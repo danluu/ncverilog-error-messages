@@ -10,4 +10,8 @@ ncsim: *E,MSSYSTF: User Defined system task or function registered during elabor
 
 ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)] -- there are many reasons this can happen. If you get a ridiculously large number of these, it could be because you left off an 'end'. The first one has the location of the error.
 
+Non-errors that cause problems:
+
 X values in a multi-dimensional packed array: are you sure the array is large enough? If you index off the end, it is neither a compile time error nor a runtime error. It "works", but gives you Xs.
+
+Connecting 'logic' to an enum. If you have something that should be an enum and change just the port type on the module to input logic, it still works! Well, for some definition of works. There's no warning or error.
