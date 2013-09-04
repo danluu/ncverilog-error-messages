@@ -6,6 +6,9 @@ I've found that most ncverilog messages are both obscure and ungoogle-able. Hope
 
 ncsim: *E,MSSYSTF: User Defined system task or function registered during elaboration and used within the simulation has not been registered during simulation. -- this happens if the $function isn't defined. Any random typo will result in this error.
 
+ncvlog: *E,NOTTXX: Expecting a task name [10.2.2(IEEE)] -- this error occurs if you use a put a parameter in an executable block. Note that if you substitute an the integer value of the local param you then get the following error:
+ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)]
+
 *E,SVNIMP: SystemVerilog construct not yet implemented:  nested program -- I'm unsure what that mean by nested, since this error occurs even when you try to write a program block inside a module. This error message seems to be the one given any time write a program block where you shouldn't.
 
 ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)] -- there are many reasons this can happen. If you get a ridiculously large number of these, it could be because you left off an 'end'. The first one has the location of the error.
