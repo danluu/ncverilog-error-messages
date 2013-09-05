@@ -18,6 +18,8 @@ ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting. -- ncelab's 
 
 ncelab: *E,CUVMUR (../rtl/foo,314|618): instance 'foo.bar@foo<module>.baz[0].@qux<module>.quux' of design unit 'baz' is unresolved in 'worklib.foo:sv'
 
+ncvlog: *E,NULLLP: empty list of ports [A.1.4(IEEE-2001)] -- this error will be given if you have a comma after your last port entry.
+
 
 Non-errors that cause problems:
 
