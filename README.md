@@ -11,7 +11,7 @@ ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)]
 
 *E,SVNIMP: SystemVerilog construct not yet implemented:  nested program -- I'm unsure what that mean by nested, since this error occurs even when you try to write a program block inside a module. This error message seems to be the one given any time write a program block where you shouldn't.
 
-ncvlog: *E,SVNIMP: SystemVerilog construct not yet implemented:  nested module -- In addition to the obvious reason this occurs, this also occurs if you attempt to multiply two localpramams in a packed array to get the width of the array.
+ncvlog: *E,SVNIMP: SystemVerilog construct not yet implemented:  nested module -- In addition to the obvious reason this occurs, this also occurs if you attempt to multiply two localpramams in a packed array to get the width of the array. Additionally, you get the following error, too, which is slightly more informative
 
 ncvlog: *E,NOTSTT: expecting a statement [9(IEEE)] -- there are many reasons this can happen. If you get a ridiculously large number of these, it could be because you left off an 'end'. The first one has the location of the error.
 
